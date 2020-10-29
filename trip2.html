@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Calculator</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="trip2.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trip Calculator</h1>
+    <label for="tripLengthMiles">Trip Length (Miles)</label>
+    <input type="number" id="tripLengthMiles">
+<br>
+    <label for="mpg">Miles Per Gallon</label>
+    <input type="number" id="mpg">
+<br>
+    <label for="averageSpeed">Average Speed</label>
+    <input type="number" id="averageSpeed">
+<br>
+    <label for="dollarsPerGallon">Cost of Gas ($/gallon)</label>
+    <input type="number" id="dollarsPerGallon">
+<br>
+    <button id="tripButton">Show Cost and Time</button>
+<br>
+    <button id="alertButton">Alert!</button>
+
+    <p class="output">Your trip will take <span id="hoursOutput"></span> hours.</p>
+
+    <p class="output">Your trip will cost $<span id="costOutput"></span> for gas.</p>
+</body>
+</html>
